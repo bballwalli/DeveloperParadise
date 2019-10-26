@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Developers Paradise</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="test.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+  <script>
+    // write jQuery code here
+    function change(text) {
+      return "www.youtube.com/embed/" + text + "?autoplay=0";
+    }
+
+    $(document).ready(function () {
+      $("div#gallery ul > li a").click(function () {
+        $('figcaption').text($(this).prop('title'));
+        console.log("www.youtube.com/embed/" + $(this).attr('alt') + "?autoplay=0");
+        $('iframe').attr('src', "https://www.youtube.com/embed/" + $(this).attr('alt') + "?autoplay=0");
+        return false;
+      });
+    });
+  </script>
+  <script>
+    function change(text) {
+      var newText = "www.youtube.com/embed/" + text + "?autoplay=0";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Developer's Paradise</h1>
+    </header>
+    <nav>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="media.html">Media</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+    <main>
+
+      <body>
+
+
+        <h4>Video Gallery</h4>
+        <div id="gallery">
+          <ul>
+            <li>
+              <a href="#" alt="fju9ii8YsGs" title="Javascript Tutorial"><img src="https://ytimg.googleusercontent.com/vi/fju9ii8YsGs/default.jpg"
+                  width="100" height="75" alt="Golden Gate Bridge"></a>
+            </li>
+            <li>
+              <a href="#" alt="Rub-JsjMhWY" title="C++ Tutorial"><img src="https://ytimg.googleusercontent.com/vi/Rub-JsjMhWY/default.jpg"
+                  width="100" height="75" alt="Rocky Coastline"></a>
+            </li>
+            <li>
+              <a href="#" alt="N4mEzFDjqtA" title="Python Tutorial"><img src="https://ytimg.googleusercontent.com/vi/N4mEzFDjqtA/default.jpg"
+                  width="100" height="75" alt="Waves Crashing on the Coast"></a>
+            </li>
+            <li>
+              <a href="#" alt="kDyJN7qQETA" title="HTML5 Tutorial"><img src="https://ytimg.googleusercontent.com/vi/kDyJN7qQETA/default.jpg"
+                  width="100" height="75" alt="Clouds on the Coast"></a>
+            </li>
+            <li>
+              <a href="#" alt="WPvGqX-TXP0" title="Java Tutorial"><img src="https://ytimg.googleusercontent.com/vi/WPvGqX-TXP0/default.jpg"
+                  width="100" height="75" alt="Sunset on the Coast"></a>
+            </li>
+          </ul>
+          <figure>
+            <figcaption>Javascript Tutorial</figcaption>
+            <iframe id="figure" width="560" height="315" src="https://www.youtube.com/embed/h0uWayRQz3c?autoplay=0"
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </figure>
+        </div>
+      </body>
+</body>
+
+<footer>
+  Copyright &copy; 2018 Developers Paradise<br>
+  <a href="mailto:developersparadise@gmail.com">developersparadise@gmail.com</a>
+</footer>
+</div>
+</body>
+
+</html>

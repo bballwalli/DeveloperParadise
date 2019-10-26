@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Developers Paradise</title>
+    <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+    <script>
+        function alerted() {
+            alert("Thanks for applying! We look forward to speaking with you!");
+            $("#firstname").val("");
+            $("#lastnames").val("");
+            $("#emails").val("");
+            $("#experience").val("");
+            $("#feedback").val("");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Developer's Paradise</h1>
+        </header>
+        <nav>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="media.html">Media</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+        <main>
+            <h3>Apply to Developer's Paradise</h3>
+            <p> Interested in a job at Developers Paradise? Fear not! We are always interested in getting new people in
+                order to provide more help to students.
+                Feel free to apply down below and we will get back to you as soon as possible.
+            </p>
+            <div id="job">
+            <img src="images/job.png" alt="Apply for Jobs" height="350px" width="450px">
+        </div>
+            <fieldset>
+
+                <legend>Information</legend>
+                <form id="jobform">
+                <label id="tags" for="firstname">*First name:</label><br>
+                <input type="text" id="firstname" name="firstname" required="required"><br>
+                <label id="tags" for="lastname">*Last name:</label><br>
+                <input type="text" id="lastnames" name="lastname"required="required"><br>
+                <label id="tags" for="email">*Email:</label><br>
+                <input id="emails" type="email" email="email"><br>
+                <label id="tags" for="experience">*Experience: </label><br>
+                <textarea name="experience" id="experience" rows="4" cols="30" required="required"></textarea><br>
+                <label id="tags" for="feedback">Feedback(optional):</label><br>
+                <textarea name="feedback" id="feedback" rows="4" cols="30"></textarea><br>
+ 
+                <button onclick="alerted();">Submit</button>
+
+            </form>
+            </fieldset>
+
+
+
+
+        </main>
+
+        <footer>
+            Copyright &copy; 2018 Developers Paradise<br>
+            <a href="mailto:developersparadise@gmail.com">developersparadise@gmail.com</a>
+        </footer>
+
+
+
+</html>
